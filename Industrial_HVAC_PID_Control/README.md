@@ -27,28 +27,15 @@ $$u(t) = K_p \cdot e(t) + K_i \sum e(t) + K_d \cdot (e(t) - e(t-1))$$
 - **$K_i = 0.1$**: Integral gain with anti-windup clamping ($[-100, 100]$) to eliminate steady-state error.
 - **$K_d = 1.0$**: Derivative gain to reduce overshoots and dampen oscillation.
 
-The output $u(t)$ is mapped directly to a **0 - 100% PWM duty cycle**.
-
 ---
 
-## Procedure Followed
+## Output Screenshots & Program Execution
 
-1. **Keil uVision IDE Setup**:
-   - Created a new project targetting `AT89C51`.
-   - Written Embedded C program (`main.c`) handling ADC reading, PID calculation, LCD interfacing, and PWM generation.
-   - Compiled code to generate target output `HVAC_PID_Control.hex`.
-
-2. **Proteus VSM Circuit Simulation**:
-   - Created schematic wiring AT89C51 MCU, ADC0804 converter, LM35 temperature sensor, 16x2 LCD, and L293D motor driver driving a DC fan.
-   - Loaded the compiled `HVAC_PID_Control.hex` into the AT89C51 microcontroller component properties.
-   - Executed interactive real-time simulation, observing dynamic temperature changes and corresponding PWM fan response on the LCD.
-
----
-
-## Output Screenshots
-
-### 1. Keil uVision Compilation & Build Output
+### 1. Keil uVision Compilation Output
 ![Keil Build Output](keil_build_output.jpg)
 
-### 2. Proteus Schematic Simulation Output
+### 2. Keil Debugger Dynamic PID Telemetry Output Log
+![Keil Execution Output](execution_output.jpg)
+
+### 3. Proteus Schematic Simulation Output
 ![Proteus Simulation Screenshot](proteus_simulation.jpg)
