@@ -1,0 +1,10 @@
+# #######################################################################
+# Keil uVision Project File - CO3_AT2_ABQ
+# #######################################################################
+Project: CO3_AT2_ABQ
+Target: Target 1
+Device: AT89C51
+Vendor: Atmel
+Output: CO3_AT2_ABQ.hex
+Files:
+  - main.c
