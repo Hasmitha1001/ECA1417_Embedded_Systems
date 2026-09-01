@@ -1,0 +1,10 @@
+# #######################################################################
+# Keil uVision Project File - InterTask_Mailbox_Communication
+# #######################################################################
+Project: InterTask_Mailbox_Communication
+Target: Target 1
+Device: AT89C51
+Vendor: Atmel
+Output: InterTask_Mailbox_Communication.hex
+Files:
+  - main.c
