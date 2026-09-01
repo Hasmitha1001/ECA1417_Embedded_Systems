@@ -1,0 +1,10 @@
+# #######################################################################
+# Keil uVision Project File - Vibration_Monitoring_Node
+# #######################################################################
+Project: Vibration_Monitoring_Node
+Target: Target 1
+Device: AT89C51
+Vendor: Atmel
+Output: Vibration_Monitoring_Node.hex
+Files:
+  - main.c
