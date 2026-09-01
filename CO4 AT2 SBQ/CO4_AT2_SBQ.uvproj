@@ -1,0 +1,10 @@
+# #######################################################################
+# Keil uVision Project File - CO4_AT2_SBQ
+# #######################################################################
+Project: CO4_AT2_SBQ
+Target: Target 1
+Device: AT89C51
+Vendor: Atmel
+Output: CO4_AT2_SBQ.hex
+Files:
+  - main.c
